@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fLaF7VLcNS/OvfyMxCrw08TPJcCHU0U9m/gm+dXLLmw=",
+  "Source": "Microservices.CommandsService",
+  "BasePath": "_content/Microservices.CommandsService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
