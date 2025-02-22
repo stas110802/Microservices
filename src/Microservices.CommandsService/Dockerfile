@@ -3,8 +3,8 @@ USER $APP_UID
 WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Development
-ENV ASPNETCORE_ENVIRONMENT=Development
+ARG BUILD_CONFIGURATION=Release
+
 WORKDIR /src
 COPY ["src/Microservices.CommandsService/Microservices.CommandsService.csproj", "src/Microservices.CommandsService/"]
 RUN dotnet restore "src/Microservices.CommandsService/Microservices.CommandsService.csproj"
@@ -19,4 +19,4 @@ RUN dotnet publish "Microservices.CommandsService.csproj" -c $BUILD_CONFIGURATIO
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Microservices.CommandsService.dll", "--environment=Development"]
+ENTRYPOINT ["dotnet", "Microservices.CommandsService.dll"]

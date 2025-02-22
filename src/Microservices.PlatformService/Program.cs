@@ -1,3 +1,4 @@
+using Microservices.PlatformService.AsyncDataServices;
 using Microservices.PlatformService.Data;
 using Microservices.PlatformService.SyncDataServices;
 using Microservices.PlatformService.SyncDataServices.Http;
@@ -10,6 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
+builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
 
 var isProduction = builder.Environment.IsProduction();
 //if (isProduction)
@@ -36,6 +38,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(
         c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "app v1"));
 }
+
+var msgBusClient = app.Services.GetService<IMessageBusClient>();
+if(msgBusClient != null)
+    await msgBusClient.CreateConnectAsync();
 
 app.MapControllers();
 app.Run();

@@ -5,6 +5,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.CommandsService", "src\Microservices.CommandsService\Microservices.CommandsService.csproj", "{F0233141-326C-4E81-A002-5CF0CDEB739C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8S", "K8S", "{4BD45C9E-15C2-4203-B3A8-90A45B850322}"
+	ProjectSection(SolutionItems) = preProject
+		src\K8S\commands-depl.yml = src\K8S\commands-depl.yml
+		src\K8S\ingress-srv.yml = src\K8S\ingress-srv.yml
+		src\K8S\local-pvc.yml = src\K8S\local-pvc.yml
+		src\K8S\mssql-plat-depl.yml = src\K8S\mssql-plat-depl.yml
+		src\K8S\platforms-depl.yml = src\K8S\platforms-depl.yml
+		src\K8S\platforms-np-srv.yml = src\K8S\platforms-np-srv.yml
+		src\K8S\rabbitmq-depl.yml = src\K8S\rabbitmq-depl.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

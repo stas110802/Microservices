@@ -134,3 +134,6 @@ D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\ref
 D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\Microservices.CommandsService.pdb
 D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\Microservices.CommandsService.genruntimeconfig.cache
 D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\ref\Microservices.CommandsService.dll
+D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\Microservices.CommandsService.sourcelink.json
+D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\appsettings.Production.json
+D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\RabbitMQ.Client.dll

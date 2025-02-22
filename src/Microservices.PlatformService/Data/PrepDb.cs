@@ -24,7 +24,6 @@ public static class PrepDb
             {
                 Console.WriteLine("Cannot migrate database, see inner exception.");
                 Console.WriteLine(e.Message);
-                throw;
             }
             
         }
