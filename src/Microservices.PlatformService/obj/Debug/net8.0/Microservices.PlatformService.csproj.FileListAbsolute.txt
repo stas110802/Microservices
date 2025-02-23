@@ -172,3 +172,10 @@ D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\app
 D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\RabbitMQ.Client.dll
 D:\projects\Microservices\src\Microservices.PlatformService\obj\Debug\net8.0\Microservices.PlatformService.sourcelink.json
 D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\appsettings.Development.json
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Google.Protobuf.dll
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Grpc.Core.Api.dll
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Grpc.Net.Client.dll
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+D:\projects\Microservices\src\Microservices.PlatformService\bin\Debug\net8.0\Grpc.Net.Common.dll

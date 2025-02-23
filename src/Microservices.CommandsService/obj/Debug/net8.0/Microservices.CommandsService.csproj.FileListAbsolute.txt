@@ -137,3 +137,7 @@ D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\ref
 D:\projects\Microservices\src\Microservices.CommandsService\obj\Debug\net8.0\Microservices.CommandsService.sourcelink.json
 D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\appsettings.Production.json
 D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\Google.Protobuf.dll
+D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\Grpc.Core.Api.dll
+D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\Grpc.Net.Client.dll
+D:\projects\Microservices\src\Microservices.CommandsService\bin\Debug\net8.0\Grpc.Net.Common.dll

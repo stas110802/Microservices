@@ -1,6 +1,7 @@
 using Microservices.PlatformService.AsyncDataServices;
 using Microservices.PlatformService.Data;
 using Microservices.PlatformService.SyncDataServices;
+using Microservices.PlatformService.SyncDataServices.Grpc;
 using Microservices.PlatformService.SyncDataServices.Http;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,24 +13,16 @@ builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
+builder.Services.AddGrpc();
 
 var isProduction = builder.Environment.IsProduction();
-//if (isProduction)
+if (isProduction)
 {
     builder.Services.AddDbContext<AppDbContext>(opt =>
-        opt.UseSqlServer(
-            "Server=mssql-clusterip-srv,1433;Initial Catalog=platformsdbtest;" +
-            "User ID=sa;Password=stas110802;TrustServerCertificate=True;Persist Security Info=True;Encrypt=True"));
+        opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformConnection")));
 }
 
-// if (builder.Environment.IsDevelopment())
-// {
-//     builder.Services.AddDbContext<AppDbContext>(opt =>
-//         opt.UseInMemoryDatabase("InMemoryDb"));
-// }
-
 var app = builder.Build();
-PrepDb.PrepPopulation(app, isProduction);
 
 if (app.Environment.IsDevelopment())
 {
@@ -44,4 +37,11 @@ if(msgBusClient != null)
     await msgBusClient.CreateConnectAsync();
 
 app.MapControllers();
+app.MapGrpcService<GrpcPlatformService>();
+
+// not necessary
+app.MapGet("/protos/platform.proto", async context => 
+    await context.Response.WriteAsync(File.ReadAllText("Protos/platform.proto")));
+PrepDb.PrepPopulation(app, isProduction);
+
 app.Run();

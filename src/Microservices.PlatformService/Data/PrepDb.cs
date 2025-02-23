@@ -29,7 +29,7 @@ public static class PrepDb
         }
         if (context.Platforms.Any() is false)
         {
-            Console.WriteLine("Seeding data...");
+            Console.WriteLine("Seeding test data...");
             context.Platforms.AddRange(
                 new Platform { Name = "DotNet", Publisher = "Microsoft", Cost = "Free" },
                 new Platform { Name = "SQL Server", Publisher = "Microsoft", Cost = "Free" },
@@ -38,7 +38,7 @@ public static class PrepDb
         }
         else
         {
-            Console.WriteLine("We already have data");
+            Console.WriteLine("Already have data in db!");
         }
     }
 }

@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "37ksaBBW+Q4=",
+  "dgSpecHash": "EeDkEQJk+fo=",
   "success": true,
   "projectFilePath": "D:\\projects\\Microservices\\src\\Microservices.CommandsService\\Microservices.CommandsService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baxto\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\baxto\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\baxto\\.nuget\\packages\\google.protobuf\\3.30.0-rc1\\google.protobuf.3.30.0-rc1.nupkg.sha512",
+    "C:\\Users\\baxto\\.nuget\\packages\\grpc.core.api\\2.67.0\\grpc.core.api.2.67.0.nupkg.sha512",
+    "C:\\Users\\baxto\\.nuget\\packages\\grpc.net.client\\2.67.0\\grpc.net.client.2.67.0.nupkg.sha512",
+    "C:\\Users\\baxto\\.nuget\\packages\\grpc.net.common\\2.67.0\\grpc.net.common.2.67.0.nupkg.sha512",
+    "C:\\Users\\baxto\\.nuget\\packages\\grpc.tools\\2.69.0\\grpc.tools.2.69.0.nupkg.sha512",
     "C:\\Users\\baxto\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\baxto\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
     "C:\\Users\\baxto\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
